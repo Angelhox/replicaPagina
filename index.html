@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylo.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <body class="pagina-general">
+        <div class="contenedor-no-footer">
+            <div class="barra-navegacion-header">
+                <div class="contenedor-logo-header">
+                    <a href="/"><img class="logo" src="img/logoWild.png" /></a>
+                </div>
+                <div class="contenedor-opciones-nav">
+                    <nav class="nav">
+                        <div class="nav-icono-oculto">
+                            <a id="nav-toggle" href="#!"><span class="spn"></span></a>
+                        </div>
+                        <ul class="lista-opciones-nav">
+                            <li>
+                                <a href="/" class="active">Home</a>
+                            </li>
+                            <li>
+                                <a href="/downloads/" class="inactive">Downloads</a>
+                            </li>
+                            <li>
+                                <a href="/news/" class="inactive">News</a>
+                            </li>
+                            <li>
+                                <a href="/about/" class="inactive">About</a>
+                            </li>
+                            <li>
+                                <a href="/contribute/" class="inactive">Contribute</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://docs.wildfly.org" class="inactive">Docs</a>
+                            </li>
+                            <li>
+                                <a class="opcion-cuadro-nav" href="https://github.com/wildfly/wildfly/fork"
+                                    target="_blank">Fork</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="contenedor-no-footer-header">
+                <div class="grid-no-footer-header">
+                    <div class="item-grid">
+                        <h1 class="wild-word">Wild<strong>Fly</strong> 28 Final is now available</h1>
+                        <div class="botones-inicio-centrado">
+                            <a href="https://github.com/wildfly/wildfly/releases/download/28.0.0.Final/wildfly-preview-28.0.0.Final.zip"
+                                class="botones-inicio-no-relleno">Try WildFly Preview</a>
+                            <a href="https://github.com/wildfly/wildfly/releases/download/28.0.0.Final/wildfly-28.0.0.Final.zip"
+                                class="botones-inicio-relleno">Download the zip</a>
+                            <a href="/downloads/" class="botones-inicio-no-relleno">Other Versions</a>
+                        </div>
+                    </div>
+
+                    <div class="item-grid">
+                        <div class="botones-segundo-item-grid">
+                            <a href="#" class="boton-segundo-grid-github" target="_blank">Github</a>
+                            <a target="_blank" href="#" class="boton-segundo-grid-docs">Documentation</a>
+                            <a href="#" class="boton-segundo-grid-forums" target="_blank">Forums</a>
+                        </div>
+                    </div>
+
+                    <div class="item-grid">
+                        <img class="screenshot" src="img/pantalla.png" />
+                        <h2 class="wild-word-center">
+                            Wild<strong>Fly</strong> is a powerful, modular, &amp;
+                            lightweight application server that helps you build amazing
+                            applications.
+                        </h2>
+                    </div>
+
+                    <div class="item-grid">
+                       
+                            <div class="tarjeta-red-powerfull">
+                                <h2>Powerful</h2>
+                                <p>
+                                    <strong>Configuration in WildFly is centralized, simple and
+                                        user-focused.</strong>
+                                    The configuration file is organized by subsystems that you can
+                                    easily comprehend and no internal server wiring is exposed.
+                                    All management capabilities are exposed in a unified manner
+                                    across many forms of access. These include a CLI, a web based
+                                    administration console, a native Java API, an HTTP/JSON based
+                                    REST API, and a JMX gateway. These options allow for custom
+                                    automation using the tools and languages that best fit your
+                                    needs.
+                                </p>
+                            </div>
+                            <div class="tarjeta-yellow-modular" ">
+                                <h2>Modular</h2>
+                                <p>
+                                    <strong>WildFly does classloading right.</strong> It uses
+                                    JBoss Modules to provide true application isolation, hiding
+                                    server implementation classes from the application and only
+                                    linking with JARs your application needs. Visibility rules
+                                    have sensible defaults, yet can be customized. The dependency
+                                    resolution algorithm means that classloading performance is
+                                    not affected by the number of versions of libraries you have
+                                    installed.
+                                </p>
+                            </div>
+                       
+                        <div class="tarjeta-teal-light">
+                            <h2>Lightweight</h2>
+                            <p>
+                                <strong>WildFly takes an aggressive approach to memory
+                                    management.</strong>
+                                The base runtime services were developed to minimize heap
+                                allocation by using common cached indexed metadata over
+                                duplicate full parses, which reduces heap and object churn.
+                                The administration console is 100% stateless and purely client
+                                driven. It starts instantly and requires zero memory on the
+                                server. These optimizations combined enable WildFly to run
+                                with stock JVM settings and also on small devices while
+                                leaving more headroom for application data and supports higher
+                                scalability.
+                            </p>
+                        </div>
+                        <div class="tarjeta-orange-standards">
+                            <h2>Standards Based</h2>
+                            <p>
+                                <strong>WildFly implements the latest in enterprise Java standards
+                                    from Jakarta EE and Eclipse MicroProfile.</strong>
+                                These improve developer productivity by providing rich
+                                enterprise capabilities in easy to consume frameworks that
+                                eliminate boilerplate and reduce technical burden. This allows
+                                your team to focus on the core business needs of your
+                                application. By building your application on standards you
+                                retain the flexibility to migrate between various vendor
+                                solutions.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item-grid-final">
+                        <div class="contenedor-tarjetas-news">
+                            <div class="contenedor-titulo-news">
+                                <h3>Latest News</h3>
+                            </div>
+
+                            <div class="tarjeta-grid-item-new teal">
+                                <div class="titulo-tarjeta-item-new">
+                                    <h4>
+                                        <a href="https://wildfly-security.github.io/wildfly-elytron/blog/using-custom-principals-with-elytron/"
+                                            target="_blank">Using Custom Principals with Elytron</a>
+                                    </h4>
+                                </div>
+                                <p class="tarjeta-item-new-autor">By Cameron Rodriguez | April 25, 2023</p>
+
+                                <p class="tarjeta-grid-item-new-contexto">
+                                    How to make accessing user information simpler, with new
+                                    support for custom principals in WildFly Elytron.
+                                </p>
+
+                                <a href="https://wildfly-security.github.io/wildfly-elytron/blog/using-custom-principals-with-elytron/"
+                                    target="_blank">Read More &gt;</a>
+                            </div>
+
+                            <div class="tarjeta-grid-item-new yellow">
+                                <div class="titulo-tarjeta-item-new">
+                                    <h4>
+                                        <a href="https://resteasy.dev/2023/04/19/tracing-feature-in-wildfly/"
+                                            target="_blank">Using The RESTEasy Tracing Feature In WildFly</a>
+                                    </h4>
+                                </div>
+                                <p class="tarjeta-item-new-autor">By 阿男 | April 20, 2023</p>
+
+                                <p class="tarjeta-grid-item-new-contexto">
+                                    The RESTEasy tracing feature has been integrated into
+                                    WildFly since its version 28.
+                                </p>
+
+                                <a href="https://resteasy.dev/2023/04/19/tracing-feature-in-wildfly/"
+                                    target="_blank">Read More &gt;</a>
+                            </div>
+
+                            <div class="tarjeta-grid-item-new yellow">
+                                <div class="titulo-tarjeta-item-new">
+                                    <h4>
+                                        <a href="/news/2023/04/20/WildFly28-Released/">WildFly 28 is released!</a>
+                                    </h4>
+                                </div>
+                                <p class="tarjeta-item-new-autor">By Brian Stansberry | April 20, 2023</p>
+
+                                <p class="tarjeta-grid-item-new-contexto">
+                                    I’m pleased to announce that the new WildFly and WildFly
+                                    Preview 28.0.0.Final releases are available for download at
+                                    https://wildfly.org/downloads. New and Notable Observability
+                                    The biggest changes in WildFly 28 relate to the
+                                    observability space. The micrometer subsystem has been added
+                                    to standard WildFly, bringing Micrometer support. As part of
+                                    this work, we’ve added support for Micrometer integration
+                                    with our MicroProfile Fault Tolerance implementation. The
+                                    micrometer subsystem was first introduced in WildFly Preview
+                                    in WildFly 27....
+                                </p>
+
+                                <a href="/news/2023/04/20/WildFly28-Released/">Read More &gt;</a>
+                            </div>
+
+                            <div class="tarjeta-grid-item-new orange">
+                                <div class="titulo-tarjeta-item-new">
+                                    <h4>
+                                        <a href="/news/2023/04/13/intellij-server-connector/">An Introduction To Server
+                                            Connector for IntelliJ</a>
+                                    </h4>
+                                </div>
+                                <p class="tarjeta-item-new-autor">By | April 13, 2023</p>
+
+                                <p class="tarjeta-grid-item-new-contexto">
+                                    Server Connector for IntelliJ, also known as IntelliJ-rsp is
+                                    a tool for acquiring, locating, installing, starting,
+                                    stopping, and deloying artifacts to Application Servers like
+                                    WildFly and EAP. TheThe project’s source code can be found
+                                    here: GitHub - IntelliJ-rsp / Server Connector for IntelliJ
+                                    The project had it’s first public-ready release this week,
+                                    at version 0.7.0. For people who have used JBossTools or the
+                                    VS Code Server Connector Extensions, the UI and general
+                                    workflows should be...
+                                </p>
+
+                                <a href="/news/2023/04/13/intellij-server-connector/">Read More &gt;</a>
+                            </div>
+
+                            <div class="tarjeta-grid-item-new teal">
+                                <div class="titulo-tarjeta-item-new">
+                                    <h4>
+                                        <a href="/news/2023/04/05/prospero/">An Introduction To The Prospero Usage</a>
+                                    </h4>
+                                </div>
+                                <p class="tarjeta-item-new-autor">By 阿男 | April 05, 2023</p>
+
+                                <p class="tarjeta-grid-item-new-contexto">
+                                    Prospero is a tool provided by the WildFly community: GitHub
+                                    - wildfly-extras/prospero: Prospero is a tool combining
+                                    Galleon feature packs and wildfly-channels to provision and
+                                    update Wildfly server. The purpose of the project can be
+                                    quoted from the README of the above project link: Prospero
+                                    is a tool combining Galleon feature packs and
+                                    wildfly-channels to provision and update Wildfly server.
+                                    Briefly speaking, you can use the tool to do the version
+                                    management of your WildFly...
+                                </p>
+
+                                <a href="/news/2023/04/05/prospero/">Read More &gt;</a>
+                            </div>
+
+                            <div class="tarjeta-grid-item-new orange">
+                                <div class="titulo-tarjeta-item-new">
+                                    <h4>
+                                        <a href="/news/2023/03/30/WildFly28-Beta-Released/">WildFly 28 Beta1 is
+                                            released!</a>
+                                    </h4>
+                                </div>
+                                <p class="tarjeta-item-new-autor">By Brian Stansberry | March 30, 2023</p>
+
+                                <p class="tarjeta-grid-item-new-contexto">
+                                    I’m pleased to announce that the new WildFly and WildFly
+                                    Preview 28.0.0.Beta1 releases are available for download at
+                                    https://wildfly.org/downloads. New and Notable Observability
+                                    The biggest changes in WildFly 28 Beta1 relate to the
+                                    observability space. The micrometer subsystem has been added
+                                    to standard WildFly, bringing Micrometer support. As part of
+                                    this work, we’ve added support for Micrometer integration
+                                    with our MicroProfile Fault Tolerance implementation. The
+                                    micrometer subsystem was first introduced in WildFly Preview
+                                    in WildFly...
+                                </p>
+
+                                <a href="/news/2023/03/30/WildFly28-Beta-Released/">Read More &gt;</a>
+                            </div>
+
+                            <div class="tarjeta-grid-item-new orange">
+                                <div class="titulo-tarjeta-item-new">
+                                    <h4>
+                                        <a href="/news/2023/03/09/WildFly-Maven-Plugin/">WildFly Maven Plugin</a>
+                                    </h4>
+                                </div>
+                                <p class="tarjeta-item-new-autor">By James R. Perkins | March 09, 2023</p>
+
+                                <p class="tarjeta-grid-item-new-contexto">
+                                    The wildfly-maven-plugin has introduced a new dev goal. If
+                                    you are familiar with the run goal, this goal is very
+                                    similar. However, it watches for changes to source files. If
+                                    changes are found, the WAR is rebuilt and redeployed. This
+                                    new goal is available in version 4.1.0.Beta3 of the
+                                    wildfly-maven-plugin. Using the dev Goal In its simplest
+                                    form you enable the plugin like any other maven plugin:
+                                    &lt;plugin&gt;
+                                    &lt;groupId&gt;org.wildfly.plugins&lt;/groupId&gt;
+                                    &lt;artifactId&gt;wildfly-maven-plugin&lt;/artifactId&gt;
+                                    &lt;version&gt;${version.wildfly-maven-plugin}&lt;/version&gt;
+                                    &lt;/plugin&gt; Once added to...
+                                </p>
+
+                                <a href="/news/2023/03/09/WildFly-Maven-Plugin/">Read More &gt;</a>
+                            </div>
+
+                            <div class="tarjeta-grid-item-new red">
+                                <div class="titulo-tarjeta-item-new">
+                                    <h4>
+                                        <a href="https://resteasy.dev/2023/02/20/resteasy-microprofile-openapi/"
+                                            target="_blank">Using MicroProfile OpenAPI with RESTEasy</a>
+                                    </h4>
+                                </div>
+                                <p class="tarjeta-item-new-autor">By 阿男 | February 23, 2023</p>
+
+                                <p class="tarjeta-grid-item-new-contexto">An introduction to use OpenAPI with RESTEasy.
+                                </p>
+
+                                <a href="https://resteasy.dev/2023/02/20/resteasy-microprofile-openapi/"
+                                    target="_blank">Read More &gt;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenedor-footer">
+            <div class="seccion-footer"><!--Esta mostrando una linea :(-->
+                <div class="contenedor-logo-footer">
+                    <a href="/"><img class="logo-footer" src="img/logoWild.png" /></a>
+                </div>
+            </div>
+            <div class="contenedor-grid-footer">
+                <p class="grid-item-footer">
+                    WildFly is open. All dependencies of this project are available
+                    under the
+                    <a href="https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html" target="_blank">LGPL 2.1</a>
+                    or compatible license.<br /><br />This website was built with
+                    <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> is hosted
+                    on
+                    <a href="https://pages.github.com/" target="_blank">Github Pages</a>
+                    and is completely open source. If you want to make it better,
+                    <a href="https://github.com/wildfly/wildfly.org/fork" target="_blank">fork it</a>
+                    and show us what you’ve got.
+                </p>
+
+                <div class="project-links-footer-1-12">
+                    <strong>Navigation</strong>
+                    <ul class="links-footer-1-12">
+                        <li><a href="/downloads">Downloads</a></li>
+
+                        <li><a href="https://docs.wildfly.org">Docs</a></li>
+
+                        <li><a href="https://github.com/wildfly/wildfly">Github</a></li>
+                    </ul>
+                </div>
+
+                <div class="project-links-footer-1-12">
+                    <strong>Contribute</strong>
+                    <ul class="links-footer-1-12">
+                        <li>
+                            <a href="https://issues.jboss.org/browse/WFLY">Submit a bug</a>
+                        </li>
+
+                        <li>
+                            <a href="https://groups.google.com/forum/#!forum/wildfly">Join the forum</a>
+                        </li>
+
+                        <li>
+                            <a href="https://github.com/wildfly/wildfly/fork">Fork WildFly</a>
+                        </li>
+
+                        <li><a href="https://twitter.com/WildFlyAS">Follow us</a></li>
+                    </ul>
+                </div>
+
+                <div class="project-links-footer-1-12">
+                    <strong>Get Help</strong>
+                    <ul class="links-footer-1-12">
+                        <li>
+                            <a href="https://groups.google.com/forum/#!forum/wildfly">Join the forum</a>
+                        </li>
+
+                        <li>
+                            <a href="https://wildfly.zulipchat.com/">Join Zulip Chat</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mas-links-footer-6-12">
+                    <strong>Find more Red Hat Middleware Community Projects</strong>
+                    <ul class="lista-mas-links">
+                        <li><a href="https://www.apiman.io/">APIMan</a></li>
+
+                        <li><a href="http://arquillian.org">Arquillian</a></li>
+
+                        <li>
+                            <a href="https://github.com/ansible-middleware/wildfly">Ansible Collection for Wildfly</a>
+                        </li>
+
+                        <li><a href="http://byteman.jboss.org/">Byteman</a></li>
+
+                        <li><a href="http://capedwarf.org/">CapeDwarf</a></li>
+
+                        <li>
+                            <a href="https://github.com/alechenninger/chronicler">Chronicler</a>
+                        </li>
+
+                        <li><a href="https://github.com/darcy-framework">Darcy</a></li>
+
+                        <li><a href="http://debezium.io/">Debezium</a></li>
+
+                        <li><a href="https://www.drools.org/">Drools</a></li>
+
+                        <li><a href="http://gatein.jboss.org/">GateIn</a></li>
+
+                        <li><a href="http://www.hawkular.org/">Hawkular</a></li>
+
+                        <li><a href="http://hawt.io/">Hawtio</a></li>
+
+                        <li><a href="http://hibernate.org/">Hibernate</a></li>
+
+                        <li><a href="http://www.infinispan.org/">Infinispan</a></li>
+
+                        <li>
+                            <a href="https://developers.redhat.com/products/codeready-studio/overview">CodeReady
+                                Studio</a>
+                        </li>
+
+                        <li><a href="http://forge.jboss.org/">JBoss Forge</a></li>
+
+                        <li>
+                            <a href="https://github.com/jboss-logging">JBoss Logging</a>
+                        </li>
+
+                        <li>
+                            <a href="http://jbossremoting.jboss.org/">JBoss Remoting</a>
+                        </li>
+
+                        <li><a href="https://www.jbpm.org/">jBPM</a></li>
+
+                        <li><a href="https://jsfunit.jboss.org/">JSFUnit</a></li>
+
+                        <li><a href="https://www.keycloak.org/">Keycloak</a></li>
+
+                        <li><a href="http://modcluster.io/">Mod Cluster</a></li>
+
+                        <li><a href="http://modeshape.jboss.org/">ModeShape</a></li>
+
+                        <li><a href="https://www.optaplanner.org/">OptaPlanner</a></li>
+
+                        <li><a href="https://quarkus.io/">Quarkus</a></li>
+
+                        <li><a href="http://resteasy.jboss.org/">RESTEasy</a></li>
+
+                        <li><a href="https://riftsaw.jboss.org/">Riftsaw</a></li>
+
+                        <li><a href="http://savara.jboss.org/">Savara</a></li>
+
+                        <li><a href="https://weld.cdi-spec.org/">Weld</a></li>
+
+                        <li><a href="http://arquillian.org/">Shrinkwrap</a></li>
+
+                        <li><a href="http://snowdrop.jboss.org/">Snowdrop</a></li>
+
+                        <li><a href="https://switchyard.jboss.org/">Switchyard</a></li>
+
+                        <li><a href="https://tattletale.jboss.org/">Tattletale</a></li>
+
+                        <li><a href="http://teiid.jboss.org/">Teiid</a></li>
+
+                        <li>
+                            <a href="https://wildfly-security.github.io/wildfly-elytron/">WildFly Elytron</a>
+                        </li>
+
+                        <li><a href="https://thorntail.io/">Thorntail</a></li>
+
+                        <li><a href="http://wise.jboss.org/">Wise</a></li>
+
+                        <li><a href="https://xnio.jboss.org/">XNIO</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="contenedor-footer-final">
+            <div class="grid-footer-final">
+                <span class="footer-final-licencia">
+                    <i class="icono-creative-commons"></i><i class="icono-creative-autor"></i>
+                    <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC by 3.0</a>
+                    |
+                    <a href="https://www.redhat.com/en/about/privacy-policy">Privacy Policy</a>
+                </span>
+                <span class="redhat"> Sponsored by </span>
+                <span class="redhat-logo">
+                    <a href="https://www.redhat.com/" target="_blank"><img src="img/redhat.svg" /></a>
+                </span>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script type="text/javascript" src="js/mobile-nav.js"></script>
+        <script type="text/javascript" src="js/random-color-picker.js"></script>
+        <script type="text/javascript" src="js/bottom.js"></script>
+    </body>
+</body>
+
+</html>
